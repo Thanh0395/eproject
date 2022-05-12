@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Products</title>
+</head>
+<body>
+  <header>
+    <table>
+      <tr>
+        <td class="logo">
+          <a href="Index.html"><img width="100px" src="Logo1.png"></a>
+        </td>
+        <td class="navbar">
+          <div>
+            <a href="#">Shops</a>
+            <a href="AboutUs.html"                      >Contact Us</a>
+            <a href="Pro_Cat.html"  class="active-nav"  >Products</a>
+            <a href="Index.html"                        >Home</a>
+          </div>
+        </td>
+        <td class="call">
+          <button type="button" class="btn btn-success btn-lg" id="call">CALL ME! <i class="glyphicon glyphicon-earphone"></i></button>    
+        </td>
+      </tr>
+    </table>
+  </header>
+  <section>
+    <!-- Navbar phụ cho Categories và Material -->
+    <div class="container">
+      <ul class="nav nav-tabs">
+        <li ><a href="Pro_Cat.html">Categories</a></li>
+        <li class="active"><a href="Pro_Mat.html">Materrial</a></li>
+      </ul>
+    </div>
+    <!-- Nội dung trang phần chọn loại và sản phẩm -->
+    <div class="row">
+      <!-- Chia trang làm 2: phần site để chọn phân loại -->
+      <div class="side">
+        <table>
+          <tr>
+            <td> <input type="radio" name="Mat" id="all-cat"> <label for="all-cat">All Products</label></td>
+          </tr>
+          <tr>
+            <td> <input type="radio" name="Mat" id="Wooden"> <label for="Wooden">Wooden framed</label></td>
+          </tr>
+          <tr>
+            <td> <input type="radio" name="Mat" id="Acrylic"> <label for="Acrylic">Acrylic bordered</label></td>
+          </tr>
+          <tr>
+            <td> <input type="radio" name="Mat" id="Metal"> <label for="Metal">Metal bordered</label></td>
+          </tr>
+          <tr>
+            <td> <input type="radio" name="Mat" id="Decorative"> <label for="Decorative">Decorative mirrors</label></td>
+          </tr>
+          <tr>
+            <td> <input type="radio" name="Mat" id="LED"> <label for="LED">LED mirrors</label></td>
+          </tr>
+          <tr>
+            <td> <input type="radio" name="Mat" id="Bluetooth"> <label for="Bluetooth">Bluetooth mirrors</label></td>
+          </tr>
+        </table>
+        <br>
+      </div>
+      <!-- Chia trang làm 2: phần main để thể hiện sản phẩm -->
+      <div class="main">
+        <img src="HomePage.jpg" width="400px">Ví dụ là hình sản phẩm
+      </div>
+    </div>
+  </section>
+    <div>
+        <footer class="footer" align="center">
+            &copy; 2022 CR COPYRIGHT ALL RIGHTS RESERVED
+        </footer>
+    </div>
+</body>
+</html>

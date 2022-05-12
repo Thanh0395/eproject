@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Products</title>
+  <script>
+    // Hàm cho nút more
+    function moreFunction() {
+      var x = document.getElementById("myMore");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
+</head>
+<body>
+  <header>
+    <table>
+      <tr>
+        <td class="logo">
+          <a href="Index.html"><img width="100px" src="Logo1.png"></a>
+        </td>
+        <td class="navbar">
+          <div>
+            <a href="#">Shops</a>
+            <a href="AboutUs.html"                      >Contact Us</a>
+            <a href="Pro_Cat.html"  class="active-nav"  >Products</a>
+            <a href="Index.html"                        >Home</a>
+          </div>
+        </td>
+        <td class="call">
+          <button type="button" class="btn btn-success btn-lg" id="call">CALL ME! <i class="glyphicon glyphicon-earphone"></i></button>    
+        </td>
+      </tr>
+    </table>
+  </header>
+  <section>
+    <!-- Navbar phụ cho Categories và Material -->
+    <div class="container">
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="Pro_Cat.html">Categories</a></li>
+        <li ><a href="Pro_Mat.html">Materrial</a></li>
+      </ul>
+    </div>
+    <!-- Nội dung trang phần chọn loại và sản phẩm -->
+    <div class="row">
+      <!-- Chia trang làm 2: phần site để chọn phân loại -->
+      <div class="side">
+        <table>
+          <tr>
+            <td> <input type="radio" name="Cate" id="all-cat"> <label for="all-cat">All Products</label></td>
+          </tr>
+          <tr>
+            <td> <input type="radio" name="Cate" id="living"> <label for="living">Drawing/Living room mirrors</label></td>
+          </tr>
+          <tr>
+            <td> <input type="radio" name="Cate" id="bath"> <label for="bath">Bathroom mirrors</label></td>
+          </tr>
+          <tr>
+            <td> <input type="radio" name="Cate" id="dress"> <label for="dress">Dressing mirrors</label></td>
+          </tr>
+          <tr>
+            <td> <input type="radio" name="Cate" id="bed"> <label for="bed">Bedroom mirrors</label></td>
+          </tr>
+        </table>
+        <br>
+        <!-- Nút more cho user thêm sự chọn lựa (Js dc viết phía trên phần head) -->
+        <a onclick="moreFunction()">More:...</a>
+        <div id="myMore" style="display: none;">
+          <ul type ="none"><p>Brand:</p>
+            <li><input type="radio" name="Brand"> Viglacera</li>
+            <li><input type="radio" name="Brand"> Inax</li>
+            <li><input type="radio" name="Brand"> Citybuilding</li>
+          </ul>
+          <ul type ="none"><p>Shape:</p>
+            <li><input type="radio" name="Shape"> Circle</li>
+            <li><input type="radio" name="Shape"> Rectangle</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Chia trang làm 2: phần main để thể hiện sản phẩm -->
+      <div class="main">
+        <img src="HomePage.jpg" width="400px">
+      </div>
+    </div>
+  </section>
+    <div>
+        <footer class="footer" align="center">
+            &copy; 2022 CR COPYRIGHT ALL RIGHTS RESERVED
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+    font-family: tahoma;
+}
+/* HomePage CSS */
+  /* Nav bar */
+    .logo {
+    width: 10%;
+    text-align: center;
+    overflow: hidden;
+    padding: 10px;
+    }
+    #navbar {
+    width: 80%;
+    overflow: hidden;
+    background-color: white;
+    }
+    .navbar a {
+    width: 20%;
+    float: right;
+    font-size: 20pt;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+    .navbar a:hover {
+    text-decoration: underline;
+    color: darkgoldenrod;
+    }
+    .navbar .active-nav {
+    color: darkgoldenrod;
+    text-shadow: 3px 3px 10px rgb(181, 184, 136);
+    }
+    .call {
+    width: 10%;
+    }
+  /* Carousel: 50% bên trái */
+    .left_article {
+      background-color: white;
+      width: 50%;
+      height: auto;
+      float: left;
+      padding-top: 5pt;
+      padding-bottom: 5pt;
+      padding-left: 8%;
+      padding-right: 5%;
+    }
+    .container {
+      width: 100%;
+    }
+    .carousel-inner img {
+        width: 100%;
+        height: 100%;
+    }
+  /* Logan và hình voted: 50% bên phải */
+    .right_article {
+        background-color: white;
+        width: 50%;
+        height: auto;
+        float: left;
+    }
+
+    .slogan{
+      position: absolute;
+      top: 30%;
+      left: 42%;
+      font-family: cursive;
+      font-weight: bold;
+      font-size: 36pt;
+      text-align: center;
+    }
+    .voted {
+      width: auto;
+      position: absolute;
+      top: 80%;
+      left: 45%;
+    }
+  /* Footer */
+    .footer {
+      background-color: white;
+      width: 100%;
+      height: auto;
+      float: left;
+      font-size: 12pt;
+    }
+/* Trang Products */
+    /* Navigation bar cho Categories và Material */
+
+    /* Chia trang làm hai: Radio box và sản phẩm */
+    .row {  
+      display: -ms-flexbox; /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap; /* IE10 */
+      flex-wrap: wrap;
+    }
+      /* Sidebar  left column */
+      .side {
+        -ms-flex: 30%; /* IE10 */
+        flex: 30%;
+        background-color: white;
+        padding: 20px;
+      }
+      /* Sidebar right column */
+      .main {   
+        -ms-flex: 70%; /* IE10 */
+        flex: 70%;
+        background-color: white;
+        padding: 20px;
+      }
+
+
+
+
+
+    label {
+      font-family: tahoma;
+      font-style: normal;
+      padding: 5px;
+    }
+    label:hover {
+      color: darkgoldenrod;
+      font-style: italic;
+      text-decoration: underline ;
+    }
